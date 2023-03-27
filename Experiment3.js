@@ -6,7 +6,6 @@ function quickSort(arr){
     }
 
     const pivotIndex = Math.floor(arr.length / 2);
-    const pivotValue = arr[pivotIndex];
     const less = [];
     const greater = [];
 
