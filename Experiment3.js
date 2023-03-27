@@ -5,15 +5,15 @@ function quickSort(arr){
         return arr;
     }
 
-    const pivotIndex = Math.floor(arr.length / 2);
+    const pivotValue = Math.floor(arr.length / 2);
     const less = [];
     const greater = [];
 
     for(let i = 0; i < arr.length; i++){
-        if(i === pivotIndex){
+        if(i === pivotValue){
             continue;
         }
-        else if(i < pivotIndex){
+        else if(i < pivotValue){
             less.push(arr[i]);
         }
         else{
