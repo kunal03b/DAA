@@ -1,4 +1,5 @@
 // Implementation of Insertion Sorting technique using Incremental approach.
+const prompt = require("prompt-sync")();
 function insertionSort(arr,n){
     let i, key, j;
     for(i = 0;i < n;i++){
@@ -21,7 +22,8 @@ function printArray(arr,n){
     console.log("<br>")
 }
 
-let arr  = [12,11,10,6,18,2,3];
+var array = prompt("Enter array elements separated by commas: ");
+var arr = array.split(",").map(Number);
 let n = arr.length;
 insertionSort(arr,n);
 printArray(arr,n);
